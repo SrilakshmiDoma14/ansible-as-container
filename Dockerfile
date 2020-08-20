@@ -6,7 +6,6 @@ RUN curl -L https://github.com/stelligent/config-lint/releases/latest/download/c
 RUN mkdir /root/Code
 COPY tfrun.sh /root/Code
 WORKDIR /root/Code
-COPY akey.pem /root/Code
 RUN chmod 755 tfrun.sh && \
     ./tfrun.sh
 CMD ["/bin/bash", "-D"]
